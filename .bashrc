@@ -1,9 +1,8 @@
 source /etc/profile
-#source ~/.colors
 
 export EDITOR=vim
 #export LANG=ru_RU.UTF8
-export PATH="/opt/some:$PATH"
+export LANG=en_US.UTF8
 export PATH="~/bin:$PATH"
 export LESS="-i -R $LESS"
 export HISTFILESIZE=100000
