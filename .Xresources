@@ -1,0 +1,25 @@
+Xft.dpi: 80
+!Xft.antialias: 0
+!Xft.hinting:    1
+!Xft.hintstyle:  hintfull
+!Xft.rgba:       rgb
+xterm*faceName: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+xterm*faceSize: 24
+Xmerm*vt100*faceSize: 24
+
+
+!URxvt*font:           xft:Inconsolata:size=14
+URxvt*font:             -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*boldFont:         -*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
+URxvt.scrollstyle:      plain
+urxvt*perl-ext-common:  default,matcher,tabbed
+urxvt*matcher.button:   1
+URxvt.url-launcher:     /usr/bin/xdg-open
+URxvt*saveLines:        50000
+URxvt*secondaryScroll:  true
+URxvt.colorUL:          #4682B4
+!urxvt*termName:         rxvt-256color
+
+URxvt*cursorColor: 3
+!URxvt*cursorColor2: 11
+
