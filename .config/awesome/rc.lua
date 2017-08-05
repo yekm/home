@@ -551,6 +551,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- awful.spawn("quasselclient")
 -- awful.spawn("nextcloud")
-awful.spawn("google-chrome-stable")
+awful.spawn("~/bin/google-chrome-stable")
 awful.spawn("goldendict")
 
