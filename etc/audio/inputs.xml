@@ -1,18 +1,18 @@
 <?xml version="1.1" encoding="utf-8"?>
 <rack><plugin type="analyzer" instance-name="analyzer" input-index="1" output-index="1">
 <preset bank="0" program="0" plugin="analyzer" name="">
-  <param name="meter_L" value="-6.4055e-08" />
-  <param name="meter_R" value="-2.44155e-08" />
+  <param name="meter_L" value="5.45096e-05" />
+  <param name="meter_R" value="4.84843e-05" />
   <param name="clip_L" value="0" />
   <param name="clip_R" value="0" />
-  <param name="analyzer_level" value="1.25" />
-  <param name="analyzer_mode" value="0" />
+  <param name="analyzer_level" value="1.38525" />
+  <param name="analyzer_mode" value="6" />
   <param name="analyzer_scale" value="0" />
   <param name="analyzer_post" value="0" />
-  <param name="analyzer_view" value="1" />
-  <param name="analyzer_smoothing" value="1" />
+  <param name="analyzer_view" value="0" />
+  <param name="analyzer_smoothing" value="0" />
   <param name="analyzer_windowing" value="2" />
-  <param name="analyzer_accuracy" value="7" />
+  <param name="analyzer_accuracy" value="8" />
   <param name="analyzer_speed" value="15" />
   <param name="analyzer_display" value="1" />
   <param name="analyzer_hold" value="0" />
@@ -27,19 +27,19 @@
 <plugin type="limiter" instance-name="limiter" input-index="3" output-index="3">
 <preset bank="0" program="0" plugin="limiter" name="">
   <param name="bypass" value="0" />
-  <param name="level_in" value="1" />
-  <param name="level_out" value="1" />
-  <param name="meter_inL" value="1.23346e-05" />
-  <param name="meter_inR" value="1.23632e-05" />
-  <param name="meter_outL" value="5.41761e-05" />
-  <param name="meter_outR" value="5.42521e-05" />
+  <param name="level_in" value="0.015625" />
+  <param name="level_out" value="0.015625" />
+  <param name="meter_inL" value="0.000838728" />
+  <param name="meter_inR" value="0.000831635" />
+  <param name="meter_outL" value="0.000212111" />
+  <param name="meter_outR" value="0.000210313" />
   <param name="clip_inL" value="0" />
   <param name="clip_inR" value="0" />
   <param name="clip_outL" value="0" />
   <param name="clip_outR" value="0" />
-  <param name="limit" value="0.230047" />
+  <param name="limit" value="0.0625" />
   <param name="attack" value="5" />
-  <param name="release" value="50" />
+  <param name="release" value="10.9388" />
   <param name="att" value="1" />
   <param name="asc" value="1" />
   <param name="asc_led" value="0" />
@@ -52,10 +52,10 @@
   <param name="bypass" value="0" />
   <param name="level_in" value="1" />
   <param name="level_out" value="1" />
-  <param name="meter_inL" value="5.41761e-05" />
-  <param name="meter_inR" value="5.42521e-05" />
-  <param name="meter_outL" value="2.1516e-05" />
-  <param name="meter_outR" value="2.39949e-05" />
+  <param name="meter_inL" value="0.000212111" />
+  <param name="meter_inR" value="0.000210313" />
+  <param name="meter_outL" value="7.31618e-05" />
+  <param name="meter_outR" value="6.84088e-05" />
   <param name="clip_inL" value="0" />
   <param name="clip_inR" value="0" />
   <param name="clip_outL" value="0" />
@@ -98,12 +98,12 @@
 <preset bank="0" program="0" plugin="gate" name="">
   <param name="bypass" value="0" />
   <param name="level_in" value="1" />
-  <param name="meter_in" value="0.0459997" />
-  <param name="meter_out" value="1.31809e-05" />
+  <param name="meter_in" value="0.0470723" />
+  <param name="meter_out" value="0.0470723" />
   <param name="clip_in" value="0" />
   <param name="clip_out" value="0" />
   <param name="range" value="1.5849e-05" />
-  <param name="threshold" value="0.0780207" />
+  <param name="threshold" value="0.0236831" />
   <param name="ratio" value="6.6016" />
   <param name="attack" value="20" />
   <param name="release" value="250" />
@@ -111,17 +111,17 @@
   <param name="knee" value="8" />
   <param name="detection" value="0" />
   <param name="stereo_link" value="0" />
-  <param name="gating" value="2.34442e-05" />
+  <param name="gating" value="0.939439" />
 </preset>
 </plugin>
 <plugin type="mono" instance-name="mono" input-index="11" output-index="11">
 <preset bank="0" program="0" plugin="mono" name="">
   <param name="bypass" value="0" />
-  <param name="level_in" value="1" />
-  <param name="level_out" value="1" />
-  <param name="meter_in" value="0.075325" />
-  <param name="meter_outL" value="0.06924" />
-  <param name="meter_outR" value="0.0644836" />
+  <param name="level_in" value="0.846745" />
+  <param name="level_out" value="0.920188" />
+  <param name="meter_in" value="0.0595401" />
+  <param name="meter_outL" value="0.054342" />
+  <param name="meter_outR" value="0.0538825" />
   <param name="clip_in" value="0" />
   <param name="clip_outL" value="0" />
   <param name="clip_outR" value="0" />
