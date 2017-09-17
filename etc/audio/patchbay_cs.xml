@@ -1,180 +1,179 @@
 <!DOCTYPE patchbay>
-<patchbay name="patchbay_cs" version="0.4.4">
+<patchbay version="0.4.4" name="patchbay_cs">
  <output-sockets>
-  <socket name="mpd" exclusive="on" client="mpd" type="jack-audio">
+  <socket client="mpd" type="jack-audio" exclusive="on" name="mpd">
    <plug>left</plug>
    <plug>right</plug>
   </socket>
-  <socket name="pulse_audio" exclusive="off" client="PulseAudio JACK Sink" type="jack-audio">
+  <socket client="PulseAudio JACK Sink" type="jack-audio" exclusive="off" name="pulse_audio">
    <plug>front-left</plug>
    <plug>front-right</plug>
   </socket>
-  <socket name="alsa-jack\.jackP\.[0-9]+\. 1" exclusive="off" client="alsa-jack\.jackP\.[0-9]+\.0" type="jack-audio">
+  <socket client="alsa-jack\.jackP\.[0-9]+\.0" type="jack-audio" exclusive="off" name="alsa-jack\.jackP\.[0-9]+\. 1">
    <plug>out_000</plug>
    <plug>out_001</plug>
   </socket>
-  <socket name="emphasis" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="emphasis">
    <plug>emphasis Out #1</plug>
    <plug>emphasis Out #2</plug>
   </socket>
-  <socket name="s_tools" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="s_tools">
    <plug>stereo Out #1</plug>
    <plug>stereo Out #2</plug>
   </socket>
-  <socket name="deesser" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="deesser">
    <plug>deesser Out #1</plug>
    <plug>deesser Out #2</plug>
   </socket>
-  <socket name="exciter" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="exciter">
    <plug>exciter Out #1</plug>
    <plug>exciter Out #2</plug>
   </socket>
-  <socket name="bass_e" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="bass_e">
    <plug>bassenhancer Out #1</plug>
    <plug>bassenhancer Out #2</plug>
   </socket>
-  <socket name="eq8" exclusive="off" client="Calf Studio Gear" type="jack-audio">
-   <plug>eq8 Out #1</plug>
-   <plug>eq8 Out #2</plug>
-  </socket>
-  <socket name="limiter" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="limiter">
    <plug>limiter Out #1</plug>
    <plug>limiter Out #2</plug>
   </socket>
-  <socket name="multiband_limiter" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="eq8">
+   <plug>eq8 Out #1</plug>
+   <plug>eq8 Out #2</plug>
+  </socket>
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="multiband_limiter">
    <plug>multibandlimiter Out #1</plug>
    <plug>multibandlimiter Out #2</plug>
   </socket>
-  <socket name="qjsg" exclusive="off" client="qjacksignalgen" type="jack-audio">
+  <socket client="qjacksignalgen" type="jack-audio" exclusive="off" name="qjsg">
    <plug>output0</plug>
    <plug>output1</plug>
   </socket>
-  <socket name="eq" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="eq">
    <plug>eq12 Out #1</plug>
    <plug>eq12 Out #2</plug>
   </socket>
-  <socket name="system_in" exclusive="off" client="system" type="jack-audio">
+  <socket client="system" type="jack-audio" exclusive="off" name="system_in">
    <plug>capture_1</plug>
    <plug>capture_2</plug>
   </socket>
-  <socket name="onboard_in" exclusive="off" client="onboard_in" type="jack-audio">
+  <socket client="onboard_in" type="jack-audio" exclusive="off" name="onboard_in">
    <plug>capture_1</plug>
-   <plug>capture_2</plug>
   </socket>
-  <socket name="i_mono" exclusive="off" client="inputs" type="jack-audio">
+  <socket client="inputs" type="jack-audio" exclusive="off" name="i_mono">
    <plug>mono Out #1</plug>
    <plug>mono Out #2</plug>
   </socket>
-  <socket name="i_gate" exclusive="off" client="inputs" type="jack-audio">
-   <plug>gate Out #1</plug>
-   <plug>gate Out #2</plug>
-  </socket>
-  <socket name="i_lilmiter" exclusive="off" client="inputs" type="jack-audio">
-   <plug>limiter Out #1</plug>
-   <plug>limiter Out #2</plug>
-  </socket>
-  <socket name="i_eq8" exclusive="off" client="inputs" type="jack-audio">
+  <socket client="inputs" type="jack-audio" exclusive="off" name="i_eq8">
    <plug>eq8 Out #1</plug>
    <plug>eq8 Out #2</plug>
   </socket>
-  <socket name="sc_limiter" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="inputs" type="jack-audio" exclusive="off" name="i_gate">
+   <plug>gate Out #1</plug>
+   <plug>gate Out #2</plug>
+  </socket>
+  <socket client="inputs" type="jack-audio" exclusive="off" name="i_lilmiter">
+   <plug>limiter Out #1</plug>
+   <plug>limiter Out #2</plug>
+  </socket>
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="sc_limiter">
    <plug>sidechainlimiter Out #1</plug>
    <plug>sidechainlimiter Out #2</plug>
   </socket>
-  <socket name="analyzer" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="analyzer">
    <plug>analyzer Out #1</plug>
    <plug>analyzer Out #2</plug>
   </socket>
-  <socket name="eq30" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="eq30">
    <plug>eq30 Out #1</plug>
    <plug>eq30 Out #2</plug>
   </socket>
  </output-sockets>
  <input-sockets>
-  <socket name="emphasis" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="emphasis">
    <plug>emphasis In #1</plug>
    <plug>emphasis In #2</plug>
   </socket>
-  <socket name="s_tools" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="s_tools">
    <plug>stereo In #1</plug>
    <plug>stereo In #2</plug>
   </socket>
-  <socket name="deesser" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="deesser">
    <plug>deesser In #1</plug>
    <plug>deesser In #2</plug>
   </socket>
-  <socket name="exciter" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="exciter">
    <plug>exciter In #1</plug>
    <plug>exciter In #2</plug>
   </socket>
-  <socket name="bass_e" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="bass_e">
    <plug>bassenhancer In #1</plug>
    <plug>bassenhancer In #2</plug>
   </socket>
-  <socket name="eq8" exclusive="off" client="Calf Studio Gear" type="jack-audio">
-   <plug>eq8 In #1</plug>
-   <plug>eq8 In #2</plug>
-  </socket>
-  <socket name="limiter" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="limiter">
    <plug>limiter In #1</plug>
    <plug>limiter In #2</plug>
   </socket>
-  <socket name="multiband_limiter" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="eq8">
+   <plug>eq8 In #1</plug>
+   <plug>eq8 In #2</plug>
+  </socket>
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="multiband_limiter">
    <plug>multibandlimiter In #1</plug>
    <plug>multibandlimiter In #2</plug>
   </socket>
-  <socket name="eq" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="eq">
    <plug>eq12 In #1</plug>
    <plug>eq12 In #2</plug>
   </socket>
-  <socket name="analyzer" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="analyzer">
    <plug>analyzer In #1</plug>
    <plug>analyzer In #2</plug>
   </socket>
-  <socket name="xonar" exclusive="off" client="system" type="jack-audio">
+  <socket client="system" type="jack-audio" exclusive="off" name="xonar">
    <plug>playback_1</plug>
    <plug>playback_2</plug>
   </socket>
-  <socket name="onboard" exclusive="off" client="onboard" type="jack-audio">
+  <socket client="onboard" type="jack-audio" exclusive="off" name="onboard">
    <plug>playback_1</plug>
    <plug>playback_2</plug>
   </socket>
-  <socket name="i_mono" exclusive="off" client="inputs" type="jack-audio">
+  <socket client="inputs" type="jack-audio" exclusive="off" name="i_mono">
    <plug>mono In #1</plug>
   </socket>
-  <socket name="i_gate" exclusive="off" client="inputs" type="jack-audio">
-   <plug>gate In #1</plug>
-   <plug>gate In #2</plug>
-  </socket>
-  <socket name="i_limiter" exclusive="off" client="inputs" type="jack-audio">
-   <plug>limiter In #1</plug>
-   <plug>limiter In #2</plug>
-  </socket>
-  <socket name="i_eq8" exclusive="off" client="inputs" type="jack-audio">
+  <socket client="inputs" type="jack-audio" exclusive="off" name="i_eq8">
    <plug>eq8 In #1</plug>
    <plug>eq8 In #2</plug>
   </socket>
-  <socket name="i_analyzer" exclusive="off" client="inputs" type="jack-audio">
+  <socket client="inputs" type="jack-audio" exclusive="off" name="i_gate">
+   <plug>gate In #1</plug>
+   <plug>gate In #2</plug>
+  </socket>
+  <socket client="inputs" type="jack-audio" exclusive="off" name="i_limiter">
+   <plug>limiter In #1</plug>
+   <plug>limiter In #2</plug>
+  </socket>
+  <socket client="inputs" type="jack-audio" exclusive="off" name="i_analyzer">
    <plug>analyzer In #1</plug>
    <plug>analyzer In #2</plug>
   </socket>
-  <socket name="pa_in" exclusive="off" client="PulseAudio JACK Source" type="jack-audio">
+  <socket client="PulseAudio JACK Source" type="jack-audio" exclusive="off" name="pa_in">
    <plug>front-left</plug>
    <plug>front-right</plug>
   </socket>
-  <socket name="ffmpeg" exclusive="off" client="ffmpeg" type="jack-audio">
+  <socket client="ffmpeg" type="jack-audio" exclusive="off" name="ffmpeg">
    <plug>input_1</plug>
    <plug>input_2</plug>
   </socket>
-  <socket name="sc_limiter_sc" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="sc_limiter_sc">
    <plug>sidechainlimiter In #3</plug>
    <plug>sidechainlimiter In #4</plug>
   </socket>
-  <socket name="sc_limiter" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="sc_limiter">
    <plug>sidechainlimiter In #1</plug>
    <plug>sidechainlimiter In #2</plug>
   </socket>
-  <socket name="eq30" exclusive="off" client="Calf Studio Gear" type="jack-audio">
+  <socket client="Calf Studio Gear" type="jack-audio" exclusive="off" name="eq30">
    <plug>eq30 In #1</plug>
    <plug>eq30 In #2</plug>
   </socket>
@@ -188,9 +187,9 @@
   <cable output="s_tools" type="jack-audio" input="deesser"/>
   <cable output="deesser" type="jack-audio" input="exciter"/>
   <cable output="exciter" type="jack-audio" input="bass_e"/>
-  <cable output="bass_e" type="jack-audio" input="eq8"/>
-  <cable output="eq8" type="jack-audio" input="limiter"/>
-  <cable output="limiter" type="jack-audio" input="multiband_limiter"/>
+  <cable output="bass_e" type="jack-audio" input="limiter"/>
+  <cable output="eq8" type="jack-audio" input="multiband_limiter"/>
+  <cable output="limiter" type="jack-audio" input="eq8"/>
   <cable output="multiband_limiter" type="jack-audio" input="eq"/>
   <cable output="multiband_limiter" type="jack-audio" input="analyzer"/>
   <cable output="qjsg" type="jack-audio" input="analyzer"/>
@@ -198,11 +197,12 @@
   <cable output="eq" type="jack-audio" input="xonar"/>
   <cable output="eq" type="jack-audio" input="onboard"/>
   <cable output="system_in" type="jack-audio" input="i_mono"/>
-  <cable output="i_mono" type="jack-audio" input="i_gate"/>
+  <cable output="onboard_in" type="jack-audio" input="i_mono"/>
+  <cable output="i_mono" type="jack-audio" input="i_eq8"/>
+  <cable output="i_eq8" type="jack-audio" input="i_gate"/>
   <cable output="i_gate" type="jack-audio" input="i_limiter"/>
-  <cable output="i_lilmiter" type="jack-audio" input="i_eq8"/>
-  <cable output="i_eq8" type="jack-audio" input="i_analyzer"/>
-  <cable output="i_eq8" type="jack-audio" input="pa_in"/>
+  <cable output="i_lilmiter" type="jack-audio" input="i_analyzer"/>
+  <cable output="i_lilmiter" type="jack-audio" input="pa_in"/>
   <cable output="analyzer" type="jack-audio" input="ffmpeg"/>
  </cables>
 </patchbay>
