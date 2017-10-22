@@ -21,6 +21,8 @@ xrandr --output $vo --set "Broadcast RGB" "Full"
 
 xhost local:boinc
 
+redshift &
+
 urxvtd -q -f -o
 date >>~/.cache/awesome/log
 ssh-agent awesome >>~/.cache/awesome/log 2>&1
