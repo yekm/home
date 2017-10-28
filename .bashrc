@@ -8,11 +8,18 @@ export LESS="-i -R $LESS"
 export HISTFILESIZE=100000
 export HISTSIZE=10000
 export HISTCONTORL=ignoredups
+
 stty stop undef
 stty start undef
-[ -f ~/.aliases ] && . ~/.aliases
+
+alias df="df -hT"
+alias grep="grep -n --color=auto"
+alias x509info="openssl x509 -noout -text -in"
+alias diff='diff --color=auto'
+alias ls='ls --color=auto'
+
 #export PATH=/usr/lib/ccache:$PATH
-#. /etc/bash_completion
+. /usr/share/bash-completion/bash_completion
 
 #PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
